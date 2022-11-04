@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="flowTicket" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="403,639" sap2010:WorkflowViewState.IdRef="flowTicket_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="flowTicket" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="850.4,416" sap2010:WorkflowViewState.IdRef="flowTicket_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:av="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -36,7 +36,7 @@
     </sco:Collection>
   </TextExpression.NamespacesForImplementation>
   <TextExpression.ReferencesForImplementation>
-    <scg:List x:TypeArguments="AssemblyReference" Capacity="39">
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="78">
       <AssemblyReference>System.Activities</AssemblyReference>
       <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
       <AssemblyReference>System.Private.CoreLib</AssemblyReference>
@@ -75,116 +75,143 @@
       <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
       <AssemblyReference>System.Memory</AssemblyReference>
       <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
     </scg:List>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="flowTicket" sap:VirtualizedContainerService.HintSize="400,151" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="flowTicket" sap:VirtualizedContainerService.HintSize="399.99999999999994,153.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Flowchart sap:VirtualizedContainerService.HintSize="1611.9999999999998,1400" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+    <Flowchart sap:VirtualizedContainerService.HintSize="2533.6,1700" sap2010:WorkflowViewState.IdRef="Flowchart_1">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">False</x:Boolean>
-          <av:Point x:Key="ShapeLocation">700,2.5</av:Point>
-          <av:Size x:Key="ShapeSize">60,75</av:Size>
-          <av:PointCollection x:Key="ConnectorLocation">730,77.5 730,129</av:PointCollection>
-          <x:Double x:Key="Width">1578.333077636927</x:Double>
-          <x:Double x:Key="Height">1354.4675613513682</x:Double>
+          <av:Point x:Key="ShapeLocation">1760,42.400000000000006</av:Point>
+          <av:Size x:Key="ShapeSize">60,75.2</av:Size>
+          <av:PointCollection x:Key="ConnectorLocation">1790,117.60000000000001 1790,173.6</av:PointCollection>
+          <x:Double x:Key="Width">2500</x:Double>
+          <x:Double x:Key="Height">1653.6000000000001</x:Double>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <Flowchart.StartNode>
-        <x:Reference>__ReferenceID8</x:Reference>
+        <x:Reference>__ReferenceID18</x:Reference>
       </Flowchart.StartNode>
-      <FlowStep x:Name="__ReferenceID8">
+      <FlowDecision x:Name="__ReferenceID6" DisplayName="If Approved" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">628,129</av:Point>
-            <av:Size x:Key="ShapeSize">204,62</av:Size>
-            <av:PointCollection x:Key="ConnectorLocation">730,191 730,226.5</av:PointCollection>
+            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            <av:Point x:Key="ShapeLocation">1404.8,486.4</av:Point>
+            <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+            <av:PointCollection x:Key="FalseConnector">1475.2,530 1700,530</av:PointCollection>
+            <av:PointCollection x:Key="TrueConnector">1404.8,530 1190,530 1190,613.6</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Claim ticket and Follow up" sap:VirtualizedContainerService.HintSize="204,62" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="21cb3300-997e-41c0-8bed-f6252d9f7284" Version="V2">
-          <uix:NApplicationCard.Body>
-            <ActivityAction x:TypeArguments="x:Object">
-              <ActivityAction.Argument>
-                <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-              </ActivityAction.Argument>
-              <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,1313" sap2010:WorkflowViewState.IdRef="Sequence_2">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login?" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,236" sap2010:WorkflowViewState.IdRef="NTypeInto_1" Version="V3" />
-                <uix:NClick ClickType="Single" DisplayName="Open Request Menu Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_1" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                <ui:Comment sap:VirtualizedContainerService.HintSize="358,85" sap2010:WorkflowViewState.IdRef="Comment_1" Text="TODO:&#xD;&#xA;Select Reset Password Subject Ticket Only" />
-                <uix:NClick ClickType="Single" DisplayName="Open Reset Pass Ticket" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                <uix:NClick ClickType="Single" DisplayName="Follow up Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                <uix:NClick ClickType="Single" DisplayName="Claim and Follow-Up Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_4" KeyModifiers="None" MouseButton="Left" Version="V3" />
-              </Sequence>
-            </ActivityAction>
-          </uix:NApplicationCard.Body>
-          <uix:NApplicationCard.TargetApp>
-            <uix:TargetApp Area="0, 0, 0, 0" />
-          </uix:NApplicationCard.TargetApp>
-          <sap:WorkflowViewStateService.ViewState>
-            <scg:Dictionary x:TypeArguments="x:String, x:Object">
-              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-            </scg:Dictionary>
-          </sap:WorkflowViewStateService.ViewState>
-        </uix:NApplicationCard>
-        <FlowStep.Next>
-          <FlowDecision x:Name="__ReferenceID0" DisplayName="If Approved" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+        <FlowDecision.True>
+          <FlowStep x:Name="__ReferenceID1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                <av:Point x:Key="ShapeLocation">695,226.5</av:Point>
-                <av:Size x:Key="ShapeSize">70,87</av:Size>
-                <av:PointCollection x:Key="FalseConnector">765,270 920,270 920,329</av:PointCollection>
-                <av:PointCollection x:Key="TrueConnector">695,270 560,270 560,306.5</av:PointCollection>
+                <av:Point x:Key="ShapeLocation">1088,613.6</av:Point>
+                <av:Size x:Key="ShapeSize">204,92.8</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">1190,706.4 1190,746.4</av:PointCollection>
               </scg:Dictionary>
             </sap:WorkflowViewStateService.ViewState>
-            <FlowDecision.True>
-              <FlowDecision x:Name="__ReferenceID6" DisplayName="pengaju atasan" sap:VirtualizedContainerService.HintSize="87,87" sap2010:WorkflowViewState.IdRef="FlowDecision_3">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    <av:Point x:Key="ShapeLocation">516.5,306.5</av:Point>
-                    <av:Size x:Key="ShapeSize">87,87</av:Size>
-                    <av:PointCollection x:Key="TrueConnector">516.5,350 420,350 420,474</av:PointCollection>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <FlowDecision.True>
-                  <FlowStep x:Name="__ReferenceID2">
-                    <sap:WorkflowViewStateService.ViewState>
-                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                        <av:Point x:Key="ShapeLocation">320,474</av:Point>
-                        <av:Size x:Key="ShapeSize">200,92</av:Size>
-                        <av:PointCollection x:Key="ConnectorLocation">420,566 420,616.5</av:PointCollection>
-                      </scg:Dictionary>
-                    </sap:WorkflowViewStateService.ViewState>
-                    <Sequence DisplayName="NIK Check Yg Direset" sap:VirtualizedContainerService.HintSize="200,92" sap2010:WorkflowViewState.IdRef="Sequence_5">
+            <Sequence DisplayName="NIK Check Yg Direset" sap:VirtualizedContainerService.HintSize="204,92.8" sap2010:WorkflowViewState.IdRef="Sequence_5">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="433.6,577.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,392" sap2010:WorkflowViewState.IdRef="Sequence_6">
                       <sap:WorkflowViewStateService.ViewState>
                         <scg:Dictionary x:TypeArguments="x:String, x:Object">
                           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                         </scg:Dictionary>
                       </sap:WorkflowViewStateService.ViewState>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="434,578" sap2010:WorkflowViewState.IdRef="NApplicationCard_4" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
+                      <ui:Comment sap:VirtualizedContainerService.HintSize="356.8,85.6" sap2010:WorkflowViewState.IdRef="Comment_2" Text="TODO&#xA;How to get NIK string from the message box" />
+                      <uix:NGetText DisplayName="Get NIK form Message Box" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_1" Version="V3" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="433.6,2282.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
+                <uix:NApplicationCard.Body>
+                  <ActivityAction x:TypeArguments="x:Object">
+                    <ActivityAction.Argument>
+                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                    </ActivityAction.Argument>
+                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2096.8" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Version="V3" />
+                      <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                      <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                      <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Version="V3" />
+                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Version="V3" />
+                      <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                      <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                      <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                      <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_2" Version="V3" />
+                    </Sequence>
+                  </ActivityAction>
+                </uix:NApplicationCard.Body>
+                <uix:NApplicationCard.TargetApp>
+                  <uix:TargetApp Area="0, 0, 0, 0" />
+                </uix:NApplicationCard.TargetApp>
+              </uix:NApplicationCard>
+            </Sequence>
+            <FlowStep.Next>
+              <FlowDecision x:Name="__ReferenceID2" DisplayName="NIK sama?" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    <av:Point x:Key="ShapeLocation">1154.8,746.4</av:Point>
+                    <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                    <av:PointCollection x:Key="TrueConnector">1154.8,790 980,790 980,873.6</av:PointCollection>
+                    <av:PointCollection x:Key="FalseConnector">1225.2,790 1440,790 1440,863.6</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <FlowDecision.True>
+                  <FlowStep x:Name="__ReferenceID4">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">880,873.6</av:Point>
+                        <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                        <av:PointCollection x:Key="ConnectorLocation">980,966.4 980,1066.4</av:PointCollection>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="NIK Check Pengaju" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="433.6,452" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,392" sap2010:WorkflowViewState.IdRef="Sequence_6">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,266.4" sap2010:WorkflowViewState.IdRef="Sequence_10">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <ui:Comment sap:VirtualizedContainerService.HintSize="358,85" sap2010:WorkflowViewState.IdRef="Comment_2" Text="TODO&#xD;&#xA;How to get NIK string from the message box" />
-                              <uix:NGetText DisplayName="Get NIK form Message Box" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NGetText_1" Version="V3" />
+                              <uix:NGetText DisplayName="Get NIK from Request " sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_3" Version="V3" />
                             </Sequence>
                           </ActivityAction>
                         </uix:NApplicationCard.Body>
@@ -192,27 +219,27 @@
                           <uix:TargetApp Area="0, 0, 0, 0" />
                         </uix:NApplicationCard.TargetApp>
                       </uix:NApplicationCard>
-                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="434,2277" sap2010:WorkflowViewState.IdRef="NApplicationCard_5" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
+                      <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="433.6,2282.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
                         <uix:NApplicationCard.Body>
                           <ActivityAction x:TypeArguments="x:Object">
                             <ActivityAction.Argument>
                               <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                             </ActivityAction.Argument>
-                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2091" sap2010:WorkflowViewState.IdRef="Sequence_7">
+                            <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2096.8" sap2010:WorkflowViewState.IdRef="Sequence_11">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,234" sap2010:WorkflowViewState.IdRef="NTypeInto_2" Version="V3" />
-                              <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                              <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_6" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                              <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NSelectItem_1" Version="V3" />
-                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,234" sap2010:WorkflowViewState.IdRef="NTypeInto_3" Version="V3" />
-                              <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_7" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                              <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                              <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_9" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                              <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NGetText_2" Version="V3" />
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Version="V3" />
+                              <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Version="V3" />
+                              <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Version="V3" />
+                              <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                              <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_4" Version="V3" />
                             </Sequence>
                           </ActivityAction>
                         </uix:NApplicationCard.Body>
@@ -222,102 +249,138 @@
                       </uix:NApplicationCard>
                     </Sequence>
                     <FlowStep.Next>
-                      <FlowDecision x:Name="__ReferenceID3" DisplayName="NIK sama?" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+                      <FlowDecision x:Name="__ReferenceID5" DisplayName="NIK sama?" sap:VirtualizedContainerService.HintSize="70.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
                         <sap:WorkflowViewStateService.ViewState>
                           <scg:Dictionary x:TypeArguments="x:String, x:Object">
                             <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                            <av:Point x:Key="ShapeLocation">385,616.5</av:Point>
-                            <av:Size x:Key="ShapeSize">70,87</av:Size>
-                            <av:PointCollection x:Key="TrueConnector">385,660 290,660 290,724</av:PointCollection>
-                            <av:PointCollection x:Key="FalseConnector">455,660 590,660 590,724</av:PointCollection>
+                            <av:Point x:Key="ShapeLocation">944.8,1066.4</av:Point>
+                            <av:Size x:Key="ShapeSize">70.4,87.2</av:Size>
+                            <av:PointCollection x:Key="TrueConnector">944.8,1110 780,1110</av:PointCollection>
+                            <av:PointCollection x:Key="FalseConnector">1015.1999999999999,1110 1340,1110</av:PointCollection>
                           </scg:Dictionary>
                         </sap:WorkflowViewStateService.ViewState>
                         <FlowDecision.True>
-                          <FlowStep x:Name="__ReferenceID5">
+                          <FlowStep x:Name="__ReferenceID10">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">190,724</av:Point>
-                                <av:Size x:Key="ShapeSize">200,92</av:Size>
-                                <av:PointCollection x:Key="ConnectorLocation">290,816 290,886.5</av:PointCollection>
+                                <av:Point x:Key="ShapeLocation">580,1063.6</av:Point>
+                                <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                                <av:PointCollection x:Key="ConnectorLocation">680,1156.3999999999999 680,1236.4</av:PointCollection>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence DisplayName="NIK Check  Pengaju" sap:VirtualizedContainerService.HintSize="200,92" sap2010:WorkflowViewState.IdRef="Sequence_12">
+                            <Sequence DisplayName="Jalankan Reset Password" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_21">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="434,453" sap2010:WorkflowViewState.IdRef="NApplicationCard_6" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
-                                <uix:NApplicationCard.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,267" sap2010:WorkflowViewState.IdRef="Sequence_10">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NGetText DisplayName="Get NIK from Request " sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NGetText_3" Version="V3" />
-                                    </Sequence>
-                                  </ActivityAction>
-                                </uix:NApplicationCard.Body>
-                                <uix:NApplicationCard.TargetApp>
-                                  <uix:TargetApp Area="0, 0, 0, 0" />
-                                </uix:NApplicationCard.TargetApp>
-                              </uix:NApplicationCard>
-                              <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="434,2295" sap2010:WorkflowViewState.IdRef="NApplicationCard_7" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
-                                <uix:NApplicationCard.Body>
-                                  <ActivityAction x:TypeArguments="x:Object">
-                                    <ActivityAction.Argument>
-                                      <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                                    </ActivityAction.Argument>
-                                    <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2109" sap2010:WorkflowViewState.IdRef="Sequence_11">
-                                      <sap:WorkflowViewStateService.ViewState>
-                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                        </scg:Dictionary>
-                                      </sap:WorkflowViewStateService.ViewState>
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,236" sap2010:WorkflowViewState.IdRef="NTypeInto_4" Version="V3" />
-                                      <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_10" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                                      <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_11" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                                      <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NSelectItem_2" Version="V3" />
-                                      <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,236" sap2010:WorkflowViewState.IdRef="NTypeInto_5" Version="V3" />
-                                      <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_12" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                                      <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_13" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                                      <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NClick_14" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                                      <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NGetText_4" Version="V3" />
-                                    </Sequence>
-                                  </ActivityAction>
-                                </uix:NApplicationCard.Body>
-                                <uix:NApplicationCard.TargetApp>
-                                  <uix:TargetApp Area="0, 0, 0, 0" />
-                                </uix:NApplicationCard.TargetApp>
-                              </uix:NApplicationCard>
                             </Sequence>
                             <FlowStep.Next>
-                              <FlowDecision x:Name="__ReferenceID7" DisplayName="NIK sama" sap:VirtualizedContainerService.HintSize="70,87" sap2010:WorkflowViewState.IdRef="FlowDecision_4">
+                              <FlowDecision x:Name="__ReferenceID12" DisplayName="User memiliki email?" sap:VirtualizedContainerService.HintSize="114.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_6">
                                 <sap:WorkflowViewStateService.ViewState>
                                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                                    <av:Point x:Key="ShapeLocation">255,886.5</av:Point>
-                                    <av:Size x:Key="ShapeSize">70,87</av:Size>
+                                    <av:Point x:Key="ShapeLocation">622.8,1236.4</av:Point>
+                                    <av:Size x:Key="ShapeSize">114.4,87.2</av:Size>
+                                    <av:PointCollection x:Key="TrueConnector">622.8,1280 510,1280</av:PointCollection>
+                                    <av:PointCollection x:Key="FalseConnector">737.1999999999999,1280 880,1280</av:PointCollection>
                                   </scg:Dictionary>
                                 </sap:WorkflowViewStateService.ViewState>
+                                <FlowDecision.True>
+                                  <FlowStep x:Name="__ReferenceID13">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">310,1233.6</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Mengirim Password ke email user" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_23">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                  </FlowStep>
+                                </FlowDecision.True>
+                                <FlowDecision.False>
+                                  <FlowStep x:Name="__ReferenceID14">
+                                    <sap:WorkflowViewStateService.ViewState>
+                                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                        <av:Point x:Key="ShapeLocation">880,1233.6</av:Point>
+                                        <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                                        <av:PointCollection x:Key="ConnectorLocation">980,1326.3999999999999 980,1386.4</av:PointCollection>
+                                      </scg:Dictionary>
+                                    </sap:WorkflowViewStateService.ViewState>
+                                    <Sequence DisplayName="Cek Email Atasan" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_24">
+                                      <sap:WorkflowViewStateService.ViewState>
+                                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                        </scg:Dictionary>
+                                      </sap:WorkflowViewStateService.ViewState>
+                                    </Sequence>
+                                    <FlowStep.Next>
+                                      <FlowDecision x:Name="__ReferenceID15" DisplayName="Email Atasan Ada?" sap:VirtualizedContainerService.HintSize="102.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_7">
+                                        <sap:WorkflowViewStateService.ViewState>
+                                          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                            <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                            <av:Point x:Key="ShapeLocation">928.8,1386.4</av:Point>
+                                            <av:Size x:Key="ShapeSize">102.4,87.2</av:Size>
+                                            <av:PointCollection x:Key="TrueConnector">928.8,1430 790,1430</av:PointCollection>
+                                            <av:PointCollection x:Key="FalseConnector">1031.2,1430 1350,1430</av:PointCollection>
+                                          </scg:Dictionary>
+                                        </sap:WorkflowViewStateService.ViewState>
+                                        <FlowDecision.True>
+                                          <FlowStep x:Name="__ReferenceID16">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">590,1383.6</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="Mengirim Password ke email atasan" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_25">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </FlowStep>
+                                        </FlowDecision.True>
+                                        <FlowDecision.False>
+                                          <FlowStep x:Name="__ReferenceID17">
+                                            <sap:WorkflowViewStateService.ViewState>
+                                              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                <av:Point x:Key="ShapeLocation">1350,1383.6</av:Point>
+                                                <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                                              </scg:Dictionary>
+                                            </sap:WorkflowViewStateService.ViewState>
+                                            <Sequence DisplayName="Memberikan password di follow up comment" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_26">
+                                              <sap:WorkflowViewStateService.ViewState>
+                                                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                                                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                                                </scg:Dictionary>
+                                              </sap:WorkflowViewStateService.ViewState>
+                                            </Sequence>
+                                          </FlowStep>
+                                        </FlowDecision.False>
+                                      </FlowDecision>
+                                    </FlowStep.Next>
+                                  </FlowStep>
+                                </FlowDecision.False>
                               </FlowDecision>
                             </FlowStep.Next>
                           </FlowStep>
                         </FlowDecision.True>
                         <FlowDecision.False>
-                          <FlowStep x:Name="__ReferenceID4">
+                          <FlowStep x:Name="__ReferenceID11">
                             <sap:WorkflowViewStateService.ViewState>
                               <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                                <av:Point x:Key="ShapeLocation">490,724</av:Point>
-                                <av:Size x:Key="ShapeSize">200,92</av:Size>
+                                <av:Point x:Key="ShapeLocation">1340,1063.6</av:Point>
+                                <av:Size x:Key="ShapeSize">200,92.8</av:Size>
                               </scg:Dictionary>
                             </sap:WorkflowViewStateService.ViewState>
-                            <Sequence sap:VirtualizedContainerService.HintSize="200,92" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                            <Sequence DisplayName="Return ticket and follow up comment" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_22">
                               <sap:WorkflowViewStateService.ViewState>
                                 <scg:Dictionary x:TypeArguments="x:String, x:Object">
                                   <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -330,62 +393,69 @@
                     </FlowStep.Next>
                   </FlowStep>
                 </FlowDecision.True>
+                <FlowDecision.False>
+                  <FlowStep x:Name="__ReferenceID3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <av:Point x:Key="ShapeLocation">1340,863.6</av:Point>
+                        <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <Sequence DisplayName="Return ticket and follow up comment" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_9">
+                      <sap:WorkflowViewStateService.ViewState>
+                        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                        </scg:Dictionary>
+                      </sap:WorkflowViewStateService.ViewState>
+                    </Sequence>
+                  </FlowStep>
+                </FlowDecision.False>
               </FlowDecision>
-            </FlowDecision.True>
-            <FlowDecision.False>
-              <FlowStep x:Name="__ReferenceID1">
-                <sap:WorkflowViewStateService.ViewState>
-                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                    <av:Point x:Key="ShapeLocation">820,329</av:Point>
-                    <av:Size x:Key="ShapeSize">200,62</av:Size>
-                  </scg:Dictionary>
-                </sap:WorkflowViewStateService.ViewState>
-                <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Kembailkan request" sap:VirtualizedContainerService.HintSize="200,62" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" OpenMode="IfNotOpen" ScopeGuid="3217c544-eda0-4479-9f47-97bb92429ed5" Version="V2">
-                  <uix:NApplicationCard.Body>
-                    <ActivityAction x:TypeArguments="x:Object">
-                      <ActivityAction.Argument>
-                        <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
-                      </ActivityAction.Argument>
-                      <Sequence DisplayName="Do" sap2010:WorkflowViewState.IdRef="Sequence_4" />
-                    </ActivityAction>
-                  </uix:NApplicationCard.Body>
-                  <uix:NApplicationCard.TargetApp>
-                    <uix:TargetApp Area="0, 0, 0, 0" />
-                  </uix:NApplicationCard.TargetApp>
-                  <sap:WorkflowViewStateService.ViewState>
-                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
-                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
-                    </scg:Dictionary>
-                  </sap:WorkflowViewStateService.ViewState>
-                </uix:NApplicationCard>
-              </FlowStep>
-            </FlowDecision.False>
-          </FlowDecision>
-        </FlowStep.Next>
-      </FlowStep>
-      <x:Reference>__ReferenceID0</x:Reference>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.True>
+        <FlowDecision.False>
+          <FlowStep x:Name="__ReferenceID0">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <av:Point x:Key="ShapeLocation">1700,483.59999999999997</av:Point>
+                <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                <av:PointCollection x:Key="ConnectorLocation">1800,483.59999999999997 1800,483.59999999999997</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <Sequence DisplayName="Retun ticket and Follow up" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_20">
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </Sequence>
+            <FlowStep.Next>
+              <x:Reference>__ReferenceID0</x:Reference>
+            </FlowStep.Next>
+          </FlowStep>
+        </FlowDecision.False>
+      </FlowDecision>
       <x:Reference>__ReferenceID1</x:Reference>
       <x:Reference>__ReferenceID2</x:Reference>
       <x:Reference>__ReferenceID3</x:Reference>
       <x:Reference>__ReferenceID4</x:Reference>
       <x:Reference>__ReferenceID5</x:Reference>
-      <x:Reference>__ReferenceID6</x:Reference>
-      <x:Reference>__ReferenceID7</x:Reference>
       <FlowStep>
         <sap:WorkflowViewStateService.ViewState>
           <scg:Dictionary x:TypeArguments="x:String, x:Object">
-            <av:Point x:Key="ShapeLocation">690,473.99999999999994</av:Point>
-            <av:Size x:Key="ShapeSize">200,92</av:Size>
+            <av:Point x:Key="ShapeLocation">510,93.60000000000001</av:Point>
+            <av:Size x:Key="ShapeSize">200,92.8</av:Size>
             <av:PointCollection x:Key="ConnectorLocation">430,576 430,626.5</av:PointCollection>
           </scg:Dictionary>
         </sap:WorkflowViewStateService.ViewState>
-        <Sequence DisplayName="NIK Check Yg Direset" sap:VirtualizedContainerService.HintSize="200,92" sap2010:WorkflowViewState.IdRef="Sequence_15">
+        <Sequence DisplayName="NIK Check Yg Direset" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_15">
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="434,578" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Get NIK from service desk" sap:VirtualizedContainerService.HintSize="433.6,577.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_8" ScopeGuid="3c8cb181-73c9-4de3-9634-481aba3765d4" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
@@ -397,8 +467,8 @@
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <ui:Comment sap:VirtualizedContainerService.HintSize="358,85" sap2010:WorkflowViewState.IdRef="Comment_4" Text="TODO&#xA;How to get NIK string from the message box" />
-                  <uix:NGetText DisplayName="Get NIK form Message Box" sap:VirtualizedContainerService.HintSize="358,175" sap2010:WorkflowViewState.IdRef="NGetText_5" Version="V3" />
+                  <ui:Comment sap:VirtualizedContainerService.HintSize="356.8,85.6" sap2010:WorkflowViewState.IdRef="Comment_4" Text="TODO&#xA;How to get NIK string from the message box" />
+                  <uix:NGetText DisplayName="Get NIK form Message Box" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_5" Version="V3" />
                 </Sequence>
               </ActivityAction>
             </uix:NApplicationCard.Body>
@@ -406,27 +476,27 @@
               <uix:TargetApp Area="0, 0, 0, 0" />
             </uix:NApplicationCard.TargetApp>
           </uix:NApplicationCard>
-          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="434,2277" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Open Ad1access" sap:VirtualizedContainerService.HintSize="433.6,2282.4" sap2010:WorkflowViewState.IdRef="NApplicationCard_9" ScopeGuid="082f3933-b766-46ea-b7ed-91ed73fe94c9" Version="V2">
             <uix:NApplicationCard.Body>
               <ActivityAction x:TypeArguments="x:Object">
                 <ActivityAction.Argument>
                   <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
                 </ActivityAction.Argument>
-                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2091" sap2010:WorkflowViewState.IdRef="Sequence_14">
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,2096.8" sap2010:WorkflowViewState.IdRef="Sequence_14">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,234" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Version="V3" />
-                  <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                  <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                  <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Version="V3" />
-                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="358,234" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Version="V3" />
-                  <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                  <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                  <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" Version="V3" />
-                  <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="358,173" sap2010:WorkflowViewState.IdRef="NGetText_6" Version="V3" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Login" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_6" Version="V3" />
+                  <uix:NClick ClickType="Single" DisplayName="Catalog Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_15" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  <uix:NClick ClickType="Single" DisplayName="User Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_16" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  <uix:NSelectItem Item="{x:Null}" DisplayName="Select Drop Down Username" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NSelectItem_3" Version="V3" />
+                  <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Input NIK" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="356.8,234.4" sap2010:WorkflowViewState.IdRef="NTypeInto_7" Version="V3" />
+                  <uix:NClick ClickType="Single" DisplayName="Search Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_17" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  <uix:NClick ClickType="Single" DisplayName="Eye Icon Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_18" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  <uix:NClick ClickType="Single" DisplayName="Setting Menu Click" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NClick_19" KeyModifiers="None" MouseButton="Left" Version="V3" />
+                  <uix:NGetText DisplayName="Get Atasan NIK text" sap:VirtualizedContainerService.HintSize="356.8,173.6" sap2010:WorkflowViewState.IdRef="NGetText_6" Version="V3" />
                 </Sequence>
               </ActivityAction>
             </uix:NApplicationCard.Body>
@@ -436,6 +506,106 @@
           </uix:NApplicationCard>
         </Sequence>
       </FlowStep>
+      <FlowStep x:Name="__ReferenceID18">
+        <sap:WorkflowViewStateService.ViewState>
+          <scg:Dictionary x:TypeArguments="x:String, x:Object">
+            <av:Point x:Key="ShapeLocation">1690,173.6</av:Point>
+            <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+            <av:PointCollection x:Key="ConnectorLocation">1790,266.4 1790,306.4</av:PointCollection>
+          </scg:Dictionary>
+        </sap:WorkflowViewStateService.ViewState>
+        <Sequence DisplayName="Mengecek To Do List" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_17">
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Membuka Service Desk" sap:VirtualizedContainerService.HintSize="433.6,269.6" sap2010:WorkflowViewState.IdRef="NApplicationCard_10" ScopeGuid="3a0f7535-f90d-45e2-bc4b-9bfddaeb9e54" Version="V2">
+            <uix:NApplicationCard.Body>
+              <ActivityAction x:TypeArguments="x:Object">
+                <ActivityAction.Argument>
+                  <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+                </ActivityAction.Argument>
+                <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="400,84" sap2010:WorkflowViewState.IdRef="Sequence_16">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+              </ActivityAction>
+            </uix:NApplicationCard.Body>
+            <uix:NApplicationCard.TargetApp>
+              <uix:TargetApp Area="0, 0, 0, 0" />
+            </uix:NApplicationCard.TargetApp>
+          </uix:NApplicationCard>
+          <uix:NClick ClickType="Single" DisplayName="MengKlik To Do List" sap:VirtualizedContainerService.HintSize="433.6,166.4" sap2010:WorkflowViewState.IdRef="NClick_20" KeyModifiers="None" MouseButton="Left" Version="V3" />
+        </Sequence>
+        <FlowStep.Next>
+          <FlowDecision x:Name="__ReferenceID7" DisplayName="Is there Reset Password?" sap:VirtualizedContainerService.HintSize="134.4,87.2" sap2010:WorkflowViewState.IdRef="FlowDecision_5">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                <av:Point x:Key="ShapeLocation">1722.8,306.4</av:Point>
+                <av:Size x:Key="ShapeSize">134.4,87.2</av:Size>
+                <av:PointCollection x:Key="FalseConnector">1857.2,350 2090,350</av:PointCollection>
+                <av:PointCollection x:Key="TrueConnector">1722.8,350 1540,350</av:PointCollection>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <FlowDecision.True>
+              <FlowStep x:Name="__ReferenceID9">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">1340,303.6</av:Point>
+                    <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                    <av:PointCollection x:Key="ConnectorLocation">1440,396.40000000000003 1440,486.4</av:PointCollection>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Claim Ticket and Cek Approval" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_19">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                </Sequence>
+                <FlowStep.Next>
+                  <x:Reference>__ReferenceID6</x:Reference>
+                </FlowStep.Next>
+              </FlowStep>
+            </FlowDecision.True>
+            <FlowDecision.False>
+              <FlowStep x:Name="__ReferenceID8">
+                <sap:WorkflowViewStateService.ViewState>
+                  <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                    <av:Point x:Key="ShapeLocation">2090,303.6</av:Point>
+                    <av:Size x:Key="ShapeSize">200,92.8</av:Size>
+                  </scg:Dictionary>
+                </sap:WorkflowViewStateService.ViewState>
+                <Sequence DisplayName="Program Berhenti" sap:VirtualizedContainerService.HintSize="200,92.8" sap2010:WorkflowViewState.IdRef="Sequence_18">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <ui:MessageBox Caption="{x:Null}" ChosenButton="{x:Null}" AutoCloseAfter="00:00:00" DisplayName="Message Tidak Ada Reset Password" sap:VirtualizedContainerService.HintSize="337.6,95.2" sap2010:WorkflowViewState.IdRef="MessageBox_1" Text="[&quot;Tidak ada tiket reset password&quot;]" />
+                </Sequence>
+              </FlowStep>
+            </FlowDecision.False>
+          </FlowDecision>
+        </FlowStep.Next>
+      </FlowStep>
+      <x:Reference>__ReferenceID7</x:Reference>
+      <x:Reference>__ReferenceID8</x:Reference>
+      <x:Reference>__ReferenceID9</x:Reference>
+      <x:Reference>__ReferenceID0</x:Reference>
+      <x:Reference>__ReferenceID10</x:Reference>
+      <x:Reference>__ReferenceID11</x:Reference>
+      <x:Reference>__ReferenceID12</x:Reference>
+      <x:Reference>__ReferenceID13</x:Reference>
+      <x:Reference>__ReferenceID14</x:Reference>
+      <x:Reference>__ReferenceID15</x:Reference>
+      <x:Reference>__ReferenceID16</x:Reference>
+      <x:Reference>__ReferenceID17</x:Reference>
     </Flowchart>
   </Sequence>
 </Activity>
