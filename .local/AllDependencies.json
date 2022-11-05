@@ -20623,15 +20623,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\dzikr\\.nuget\\packages\\": {}
+    "C:\\Users\\Akbar\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\": {}
   },
   "project": {
     "restore": {
       "projectUniqueName": "Adira",
       "projectName": "Adira",
-      "projectPath": "C:\\Users\\dzikr\\OneDrive\\Documents\\UiPath\\Adira-ResetPassword\\.local",
-      "packagesPath": "C:\\Users\\dzikr\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dzikr\\OneDrive\\Documents\\UiPath\\Adira-ResetPassword\\.local"
+      "projectPath": "E:\\Downloads\\ICSTAR HACK\\Project\\Adira\\.local",
+      "packagesPath": "C:\\Users\\Akbar\\.nuget\\packages\\",
+      "outputPath": "E:\\Downloads\\ICSTAR HACK\\Project\\Adira\\.local",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft\\Xamarin\\NuGet\\"
+      ]
     },
     "frameworks": {
       "net6.0-windows7.0": {
@@ -20662,7 +20666,7 @@
             "version": "[22.10.3, 22.10.3]"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Users\\dzikr\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
+        "runtimeIdentifierGraphPath": "C:\\Users\\Akbar\\AppData\\Local\\Programs\\UiPath\\Studio\\runtime.json"
       }
     },
     "runtimes": {
